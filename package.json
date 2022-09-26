@@ -1,0 +1,31 @@
+{
+  "name": "e11",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sccs": "node-sass -w base_scss/mean.scss -o css/",
+    "start:dev": "webpack serve --config webpack.config.js",
+    "build": "webpack",
+    "js": "json-server --watch db.json",
+    "lint": "eslint ./src",
+    "prepare": "husky install"
+  },
+  "author": "Toshnotik",
+  "license": "ISC",
+  "dependencies": {
+    "json-server": "^0.16.3",
+    "node-sass": "^6.0.1"
+  },
+  "devDependencies": {
+    "eslint": "^7.31.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-plugin-import": "^2.23.4",
+    "husky": "^7.0.1",
+    "webpack": "^5.42.0",
+    "webpack-cli": "^4.7.2",
+    "webpack-dev-server": "^3.11.2"
+  }
+}
+
